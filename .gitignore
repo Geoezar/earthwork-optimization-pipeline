@@ -1,0 +1,66 @@
+# Python runtime
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.uv-cache/
+
+# Secrets and local configuration
+.env
+.env.*
+
+# Private input data
+*.xlsx
+*.xls
+*.csv
+*.tsv
+
+# Generated outputs and legacy output folders
+outputs/
+ciktilar/
+static_exports/
+edge_profile_*/
+
+# Reports, presentation files, and academic source packages
+*.pdf
+*.docx
+*.pptx
+*.tex
+*.bib
+*.cls
+*.def
+Project_Report_LaTeX_Source/
+Project_Report_LaTeX_Source.zip
+
+# Runtime logs and browser/cache databases
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.db-shm
+*.db-wal
+*.pma
+
+# Obsolete private review documents
+AGENT.md
+CHECKLIST.md
+history.md
+JURY_RESULTS.md
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
