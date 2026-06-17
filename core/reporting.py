@@ -258,15 +258,15 @@ def create_word_report(
         document.add_picture(str(summary_png_path), width=Inches(6.2))
         document.add_paragraph("Red regions indicate cut zones; blue regions indicate fill zones.")
 
-    _add_apa_heading(document, "Digital Jury Access", level=1)
+    _add_apa_heading(document, "Digital Project Page Access", level=1)
     _add_apa_paragraph(
         document,
-        "Scan the QR code to open the GitHub-rendered jury results page. The page summarizes the full project, "
-        "lists the generated outputs, and explains how to download interactive HTML artifacts from the repository.",
+        "Scan the QR code to open the project page. The page summarizes the full project, "
+        "lists the generated outputs, and explains how to download interactive HTML artifacts.",
     )
 
     document.add_paragraph("Figure 2").runs[0].bold = True
-    document.add_paragraph("GitHub Jury Results QR Code").runs[0].italic = True
+    document.add_paragraph("Project Page QR Code").runs[0].italic = True
     qr_path = output_directory / f"{result.area_name.replace(' ', '_')}_QR.png"
     qrcode.make(jury_results_url).save(str(qr_path))
     document.add_picture(str(qr_path), width=Inches(1.5))
